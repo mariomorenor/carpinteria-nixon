@@ -9,7 +9,7 @@ window.axios = require('axios').default;
 axios.defaults.baseURL = 'https://nixoncarpinteria.herokuapp.com/api';
 
 axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
-// axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
 
