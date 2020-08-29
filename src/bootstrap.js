@@ -8,8 +8,8 @@ window.axios = require('axios').default;
 // TODO CAMBIAR EL DOMINIO
 axios.defaults.baseURL = 'https://nixoncarpinteria.herokuapp.com/api';
 
-axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-axios.defaults.headers.common['Access-Control-Allow-Origin'] = 'https://mariomorenor.github.io';
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+// axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
 
