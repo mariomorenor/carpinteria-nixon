@@ -7,7 +7,7 @@
             <div class="carousel-inner">
               <div :class="{'carousel-item':true,'active':index==0?true:false  }"
                 v-for="(image,index) in product.images" :key="image.id">
-                <img :src="image.url" class="d-block w-100 shadow-lg" id="imgPrincipal" alt="">
+                <img :src="asset+image.url" class="d-block w-100 shadow-lg" id="imgPrincipal" alt="">
               </div>
             </div>
             <a class="carousel-control-prev" href="#imagesCarousel" role="button" data-slide="prev">
@@ -69,7 +69,8 @@ export default {
   },
 data() {
   return {
-    product:''
+    product:'',
+    asset: 'http://nixoncarpinteria.herokuapp.test',
   }
 },
 }
