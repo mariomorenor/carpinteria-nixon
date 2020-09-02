@@ -6,7 +6,7 @@ require('bootstrap');
 
 window.axios = require('axios').default;
 // TODO CAMBIAR EL DOMINIO
-axios.defaults.baseURL = 'http://nixoncarpinteria.herokuapp.com/api';
+axios.defaults.baseURL = 'https://nixoncarpinteria.herokuapp.com/api';
 // axios.defaults.baseURL = 'http://nixoncarpinteria.herokuapp.com/api';
 
 // axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
