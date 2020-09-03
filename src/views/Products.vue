@@ -46,7 +46,7 @@
                 <router-link :to="{name:'product_show',params:{product}}">
                   <div class="card producto shadow-lg">
                     <div class="card-body  mx-auto">
-                      <img class="imgProduct " :src="asset+product.images[0].url" alt="">
+                      <img class="imgProduct " :src="product.images[0].url" alt="">
                       <h6 class="font-weight-bold card-title mt-2">
                         {{product.name}}
                       </h6>
@@ -79,9 +79,6 @@ export default {
   // Variables
   data() {
     return {
-
-      // asset: 'http://nixon.test',
-      asset: 'https://nixoncarpinteria.herokuapp.com',
       products:[],
       page:1,
       range_price:0,//0 - sin clasificar; 1 - Menor a Mayor ; 2 - Mayor a Menor 
