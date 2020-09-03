@@ -7,7 +7,7 @@
             <div class="carousel-inner">
               <div :class="{'carousel-item':true,'active':index==0?true:false  }"
                 v-for="(image,index) in product.images" :key="image.id">
-                <img :src="image.url" class="d-block w-100 shadow-lg" id="imgPrincipal" alt="">
+                <img :src="image.url" class="d-block  shadow-lg" id="imgPrincipal" alt="">
               </div>
             </div>
             <a class="carousel-control-prev" href="#imagesCarousel" role="button" data-slide="prev">
@@ -86,6 +86,16 @@ data() {
 #imgPrincipal{
     border: 1px solid black;
     border-radius: 1rem;
+    width: 100%;
+    height: 40rem;
+}
+@media screen and ( max-width : 1367px){
+  #imgPrincipal{
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 100%;
+    height: 25rem;
+}
 }
 .marcoImagenes{
     width: 35rem;
